@@ -1,10 +1,9 @@
-package OOP.com.javalab22.Entity.BankAccount;
-import OOP.com.javalab22.Operations.Print;
+package OOP.com.javalab22.entity.bankAccount;
 
 /**
  * Класс Банковский Счет
  */
-public abstract class BankAccount implements Print {
+public abstract class BankAccount {
 
     private int bankAccountID;
     private long customerID;
@@ -45,12 +44,4 @@ public abstract class BankAccount implements Print {
         return null;
     }
 
-    public void print(BankAccount bankAccount) {
-        System.out.println("Customer: " + customerID);
-        System.out.println("Bank Account Number: " + bankAccountID);
-        System.out.println("Status: " + status);
-        System.out.println("Amount: " + amount);
-        System.out.println("Type: " + bankAccount.getType());
-        System.out.println();
-    }
 }
