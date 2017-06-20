@@ -16,4 +16,14 @@ public class Debet extends BankAccount {
         return "Debet";
     }
 
+    @Override
+    public String toString() {
+        return "Customer " + super.getCustomerID() +
+                "\t Bank Account Number " + super.getBankAccountID() +
+                "\t Status " + super.getStatus() +
+                "\t Type " + getType() +
+                "\t Amount " + super.getAmount();
+
+    }
+
 }
